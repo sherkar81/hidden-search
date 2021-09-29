@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, #FF8008, #FFC837);
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.heading{
+    
+    text-align: center;
+            font-size: 50px;
+            background: linear-gradient(to right,
+                    
+                    #542E71,
+                    #FB3640,
+                    #1E3163,
+                    #A799B7);
+            -webkit-background-clip: text;
+            color: transparent;
+            position: absolute;
+            top: 1%;
+}
+.heading1{
+    
+    /* text-align: left; */
+            font-size: 20px;
+            
+            
+            
+            position: absolute;
+            top: 1%;
+}
+
+.search{
+    position: relative;
+    height: 50px;
+}
+
+.search .input{
+    background-color: #682C0E;
+    color: #fff;
+    border: 0px; 
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+::placeholder {
+    font-style: italic;
+    font-size: 1em;
+    color: mintcream;
+    
+    padding: 5px;
+  }
+
+.btn{
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size:24px;
+    position: absolute;
+    top: -6px;
+   left: 0;
+   height: 60px;
+   width: 60px;
+   transition: transform 0.3s ease; 
+}
+
+.btn:focus, .input:focus{
+    outline: none;
+}
+
+.search.active .input{
+    width: 200px;
+
+}
+
+.search.active .btn{
+    transform: translateX(200px);
+}
+
